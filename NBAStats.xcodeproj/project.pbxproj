@@ -15,11 +15,12 @@
 		FA91257726931824003E6A8D /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91257626931824003E6A8D /* GamesView.swift */; };
 		FA91257926931830003E6A8D /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91257826931830003E6A8D /* FavoriteView.swift */; };
 		FA91257B26931AE6003E6A8D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91257A26931AE6003E6A8D /* MainView.swift */; };
-		FA91257D26931BB0003E6A8D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91257C26931BB0003E6A8D /* NetworkManager.swift */; };
 		FA91258126931C3E003E6A8D /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91258026931C3E003E6A8D /* APIKey.swift */; };
 		FA91258326931DF2003E6A8D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91258226931DF2003E6A8D /* Game.swift */; };
 		FA912585269322AF003E6A8D /* Standings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA912584269322AF003E6A8D /* Standings.swift */; };
 		FA91258826933394003E6A8D /* StandingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA91258726933394003E6A8D /* StandingsViewModel.swift */; };
+		FABF7EB82693772800AA7C5B /* GamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABF7EB72693772800AA7C5B /* GamesViewModel.swift */; };
+		FAE7FDCA26938C7A0078CF5E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE7FDC926938C7A0078CF5E /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,11 +34,12 @@
 		FA91257626931824003E6A8D /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
 		FA91257826931830003E6A8D /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		FA91257A26931AE6003E6A8D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		FA91257C26931BB0003E6A8D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		FA91258026931C3E003E6A8D /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		FA91258226931DF2003E6A8D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		FA912584269322AF003E6A8D /* Standings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standings.swift; sourceTree = "<group>"; };
 		FA91258726933394003E6A8D /* StandingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsViewModel.swift; sourceTree = "<group>"; };
+		FABF7EB72693772800AA7C5B /* GamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewModel.swift; sourceTree = "<group>"; };
+		FAE7FDC926938C7A0078CF5E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +74,10 @@
 			children = (
 				FA91256126931554003E6A8D /* NBA_StatsApp.swift */,
 				FA91256A26931555003E6A8D /* Info.plist */,
-				FA91257E26931BB5003E6A8D /* Managers */,
 				FA91258626933378003E6A8D /* ViewModel */,
 				FA91257F26931BC6003E6A8D /* Model */,
 				FA912574269317B5003E6A8D /* MainViews */,
+				FAE7FDC826938C5F0078CF5E /* ComponentViews */,
 				FA912575269317DC003E6A8D /* SupportFiles */,
 				FA91256726931555003E6A8D /* Preview Content */,
 			);
@@ -111,14 +113,6 @@
 			path = SupportFiles;
 			sourceTree = "<group>";
 		};
-		FA91257E26931BB5003E6A8D /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				FA91257C26931BB0003E6A8D /* NetworkManager.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
 		FA91257F26931BC6003E6A8D /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,8 +126,17 @@
 			isa = PBXGroup;
 			children = (
 				FA91258726933394003E6A8D /* StandingsViewModel.swift */,
+				FABF7EB72693772800AA7C5B /* GamesViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FAE7FDC826938C5F0078CF5E /* ComponentViews */ = {
+			isa = PBXGroup;
+			children = (
+				FAE7FDC926938C7A0078CF5E /* HeaderView.swift */,
+			);
+			path = ComponentViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +215,8 @@
 				FA912585269322AF003E6A8D /* Standings.swift in Sources */,
 				FA91258126931C3E003E6A8D /* APIKey.swift in Sources */,
 				FA912571269315B5003E6A8D /* StandingsView.swift in Sources */,
-				FA91257D26931BB0003E6A8D /* NetworkManager.swift in Sources */,
+				FAE7FDCA26938C7A0078CF5E /* HeaderView.swift in Sources */,
+				FABF7EB82693772800AA7C5B /* GamesViewModel.swift in Sources */,
 				FA91257726931824003E6A8D /* GamesView.swift in Sources */,
 				FA91257926931830003E6A8D /* FavoriteView.swift in Sources */,
 				FA912573269315D2003E6A8D /* Constants.swift in Sources */,
@@ -344,10 +348,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"NBA Stats/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "NBAStats/Preview\\ Content";
 				DEVELOPMENT_TEAM = 5V98Z8U43N;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "NBA Stats/Info.plist";
+				INFOPLIST_FILE = NBAStats/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -366,10 +370,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"NBA Stats/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "NBAStats/Preview\\ Content";
 				DEVELOPMENT_TEAM = 5V98Z8U43N;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "NBA Stats/Info.plist";
+				INFOPLIST_FILE = NBAStats/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

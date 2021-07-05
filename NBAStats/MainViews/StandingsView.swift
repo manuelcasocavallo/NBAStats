@@ -14,10 +14,11 @@ struct StandingsView: View {
     
     var body: some View {
         VStack {
-            Header()
+            HeaderView(text: "Standings")
+                .padding()
             ConferencePicker(chosenConference: $chosenConference)
             TopBar()
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 ForEach(StandingsVM.standings.sorted { $0.ConferenceRank! < $1.ConferenceRank! }, id: \.self) { team in
                     if team.Conference == chosenConference.rawValue {
                         TeamView(teamStandings: team, position: team.ConferenceRank!)
@@ -122,26 +123,6 @@ struct TeamView: View {
                 showDetails.toggle()
             }
             Spacer()
-        }
-    }
-}
-
-
-struct Header: View {
-    var body: some View {
-        VStack {
-            HStack {
-                Image("NBALogo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 60)
-                Text("Standings")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding(.leading, 8)
-                Spacer()
-            }
-            .padding()
         }
     }
 }

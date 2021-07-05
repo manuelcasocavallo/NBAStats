@@ -34,6 +34,14 @@ enum Conferences: String, CaseIterable, Identifiable {
 }
 
 
+enum GameDays: String, CaseIterable, Identifiable {
+    case Yesterday
+    case Today
+    case Tomorrow
+    var id: String { self.rawValue }
+}
+
+
 let Teams = [
     "Atlanta Hawks",
     "Brooklin Nets",

@@ -17,6 +17,7 @@ class StandingsViewModel: ObservableObject {
             switch results {
             case .success(let results):
                 self.standings = results
+//                print("Standings Call")
             case .failure(let error):
                 self.errorMessage = error.localizedDescription
                 self.isShowingError = true
