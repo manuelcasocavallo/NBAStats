@@ -42,7 +42,43 @@ enum GameDays: String, CaseIterable, Identifiable {
 }
 
 
-let Teams = [
+enum Teams: String, CaseIterable, Identifiable {
+    case AtlantaHawks             = "Atlanta Hawks"
+    case BrooklinNets             = "Brooklin Nets"
+    case BostonCeltics            = "Boston Celtics"
+    case CharlotteHornets         = "Charlotte Hornets"
+    case ChicagoBulls             = "Chicago Bulls"
+    case ClevelandCavaliers       = "Cleveland Cavaliers"
+    case DallasMavericks          = "Dallas Mavericks"
+    case DenverNuggets            = "Denver Nuggets"
+    case DetroitPistons           = "Detroit Pistons"
+    case GoldenStateWarriors      = "Golden State Warriors"
+    case HoustonRockets           = "Houston Rockets"
+    case IndianaPacers            = "Indiana Pacers"
+    case LosAngelesClippers       = "Los Angeles Clippers"
+    case LosAngelesLakers         = "Los Angeles Lakers"
+    case MemphisGrizzlies         = "Memphis Grizzlies"
+    case MiamiHeat                = "Miami Heat"
+    case MilwaukeeBucks           = "Milwaukee Bucks"
+    case MinnesotaTimberwolves    = "Minnesota Timberwolves"
+    case NewOrleansPelicans       = "New Orleans Pelicans"
+    case NewYorkKnicks            = "New York Knicks"
+    case OklahomaCityThunder      = "Oklahoma City Thunder"
+    case OrlandoMagic             = "Orlando Magic"
+    case Philadelphia76ers        = "Philadelphia 76ers"
+    case PhoenixSuns              = "Phoenix Suns"
+    case PortlandTrailblazers     = "Portland Trailblazers"
+    case SacramentoKings          = "Sacramento Kings"
+    case SanAntonioSpurs          = "SanAntonio Spurs"
+    case TorontoRaptors           = "Toronto Raptors"
+    case UtahJazz                 = "Utah Jazz"
+    case WashingtonWizards        = "Washington Wizards"
+    
+    var id: String { self.rawValue }
+}
+
+
+let teamsArray = [
     "Atlanta Hawks",
     "Brooklin Nets",
     "Boston Celtics",
@@ -73,6 +109,39 @@ let Teams = [
     "Toronto Raptors",
     "Utah Jazz",
     "Washington Wizards"
+]
+
+let teamsDict: [String : Image] = [
+    "Atlanta Hawks" : Logos.AtlantaHawks,
+    "Brooklin Nets" : Logos.BrooklinNets,
+    "Boston Celtics" : Logos.BostonCeltics,
+    "Charlotte Hornets" : Logos.CharlotteHornets,
+    "Chicago Bulls" : Logos.ChicagoBulls,
+    "Cleveland Cavaliers" : Logos.ClevelandCavaliers,
+    "Dallas Mavericks" : Logos.DallasMavericks,
+    "Denver Nuggets" : Logos.DenverNuggets,
+    "Detroit Pistons" : Logos.DetroitPistons,
+    "Golden State Warriors" : Logos.GoldenStateWarriors,
+    "Houston Rockets" : Logos.HoustonRockets,
+    "Indiana Pacers" : Logos.IndianaPacers,
+    "Los Angeles Clippers" : Logos.LosAngelesClippers,
+    "Los Angeles Lakers" : Logos.LosAngelesLakers,
+    "Memphis Grizzlies" : Logos.MemphisGrizzlies,
+    "Miami Heat" : Logos.MiamiHeat,
+    "Milwaukee Bucks" : Logos.MilwaukeeBucks,
+    "Minnesota Timberwolves" : Logos.MinnesotaTimberwolves,
+    "New Orleans Pelicans" : Logos.NewOrleansPelicans,
+    "New York Knicks" : Logos.NewYorkKnicks,
+    "Oklahoma City Thunder" : Logos.OklahomaCityThunder,
+    "Orlando Magic" : Logos.OrlandoMagic,
+    "Philadelphia 76ers" : Logos.Philadelphia76ers,
+    "Phoenix Suns" : Logos.PhoenixSuns,
+    "Portland Trailblazers" : Logos.PortlandTrailblazers,
+    "Sacramento Kings" : Logos.SacramentoKings,
+    "San Antonio Spurs" : Logos.SanAntonioSpurs,
+    "Toronto Raptors" : Logos.TorontoRaptors,
+    "Utah Jazz" : Logos.UtahJazz,
+    "Washington Wizards" : Logos.WashingtonWizards
 ]
 
 
