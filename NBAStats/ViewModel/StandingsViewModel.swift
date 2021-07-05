@@ -16,7 +16,9 @@ class StandingsViewModel: ObservableObject {
         self.getStandings { results in
             switch results {
             case .success(let results):
-                self.standings = results
+                DispatchQueue.main.async {
+                    self.standings = results
+                }
 //                print("Standings Call")
             case .failure(let error):
                 self.errorMessage = error.localizedDescription

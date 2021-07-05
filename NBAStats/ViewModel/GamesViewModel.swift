@@ -22,7 +22,9 @@ class GamesViewModel: ObservableObject {
         self.getGames(day: "2021-JAN-11") { results in
             switch results {
             case .success(let games):
-                self.yesterdaysGames = games
+                DispatchQueue.main.async {
+                    self.yesterdaysGames = games
+                }
 //                print("Yesterday Call")
             case .failure(let error):
                 self.errorMessage = error.localizedDescription
@@ -34,7 +36,9 @@ class GamesViewModel: ObservableObject {
         self.getGames(day: "2021-JAN-12") { results in
             switch results {
             case .success(let games):
-                self.todaysGames = games
+                DispatchQueue.main.async {
+                    self.todaysGames = games
+                }
 //                print("Today Call")
             case .failure(let error):
                 self.errorMessage = error.localizedDescription
@@ -46,7 +50,9 @@ class GamesViewModel: ObservableObject {
         self.getGames(day: "2021-JAN-13") { results in
             switch results {
             case .success(let games):
-                self.tomorrowsGames = games
+                DispatchQueue.main.async {
+                    self.tomorrowsGames = games
+                }
 //                print("Tomorrow Call")
             case .failure(let error):
                 self.errorMessage = error.localizedDescription
