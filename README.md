@@ -12,6 +12,7 @@ The requirements are that the app can:
 * connect to the API to retrieve team and games data
 * display the games with the scores from yesterday (or however many days in the past as you wish), as well as team logos for the pair of teams in every game
 * display future games scheduled for today and tomorrow (or however many days in the future as you wish), as well as team logos for the pair of teams in every game
+
 And as a bonus:
 * Display up-to-date standings in a separate view for both Eastern and Western Conference
 * Have a ‘favourite’ teams functionality
